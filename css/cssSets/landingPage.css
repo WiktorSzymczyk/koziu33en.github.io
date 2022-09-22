@@ -14,18 +14,20 @@ body {
 }
 
 nav {
-    padding: 30px 50px;
+    padding: 30px 50px 70px 50px;
     display: inline-flex;
 }
 
 nav h1 {
     padding: 30px 10px;
     font-size: 1.5rem;
+    font-family: "Wedding Bells", sans-serif;
 }
 
 nav h1 span {
     font-size: 1.5rem;
     color: #f57981;
+    font-family: "Wedding Bells", sans-serif;
 }
 
 nav ul {
@@ -78,6 +80,10 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
+.wiktor-szymczyk-bike-image:hover {
+    cursor: pointer;
+}
+
 .location-icon {
     padding-left: 50px;
     height: 30px;
@@ -101,6 +107,7 @@ nav ul li a:hover {
 .welcome-paragraph p {
     font-size: 1.3rem;
     padding-left: 5px;
+    font-weight: 300;
 }
 
 .welcome-paragraph {
@@ -117,8 +124,16 @@ nav ul li a:hover {
     padding-right: 5px;
 }
 
-.github-link-and-text h3 {
+.github-link-and-text h3:hover + .link-arrow {
     cursor: pointer;
+    transform: translateY(-10px) translateX(5px);
+    transition: ease-in-out 0.2s;
+}
+
+.instagram-link-and-text h3:hover + .link-arrow {
+    cursor: pointer;
+    transform: translateY(-10px) translateX(5px);
+    transition: ease-in-out 0.2s;
 }
 
 .instagram-link-and-text h3 {
@@ -137,38 +152,142 @@ nav ul li a:hover {
 }
 
 .github-and-instagram-items {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 5px;
 }
 
 .about-me-section {
     padding-left: 55px;
+    padding-top: 300px;
 }
 
 .about-me-section h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     padding-bottom: 10px;
 }
 
 .about-me-section h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
 .portfolio-products-section {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .portfolio-image {
-    padding-left: 25%;
-    width: 50%;
+    padding-left: 6%;
+    width: 80%;
     height: auto;
+    padding-bottom: 50px;
+}
+
+.portfolio-image:hover {
+    filter: grayscale(100%);
+    transition: ease-in-out 1s;
+    cursor: pointer;
 }
 
 .portfolio-products-section h1 {
+    padding-top: 1%;
+    padding-right: 20%;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.portfolio-products-section h2 {
+    padding-top: 3%;
+    padding-right: 20%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.portfolio-products-section h3 {
     padding-top: 10%;
     padding-right: 20%;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+footer {
+    display: inline-flex;
+    padding: 30px 50px;
+}
+
+footer h1 {
+    padding: 30px 10px;
+    font-size: 1.5rem;
+    font-family: "Wedding Bells", sans-serif;
+}
+
+footer h1 span {
+    font-size: 1.5rem;
+    color: #f57981;
+    font-family: "Wedding Bells", sans-serif;
+}
+
+footer .github-and-instagram-items {
+    padding: 35px 400px;
+}
+
+footer .copyright {
+    padding: 35px 70px;
+    font-size: 1.2rem;
     font-weight: 400;
+}
+
+.blog-contents {
+    padding-top: 5%;
+    background-color: #e8d8d8;
+    margin-top: 10%;
+    display: grid;
+    font-family: 'Neue Haas Display',sans-serif;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+}
+
+.blog-contents h1, h2, h3, button {
+    margin-top: 2%;
+    grid-column: 2/3;
+}
+
+.blog-contents h1{
+    font-weight: 300;
+}
+
+.blog-contents h2{
+    font-weight: 600;
+}
+
+.blog-contents h3{
+    font-weight: 700;
+}
+
+.blog-contents img {
+    margin-top: -25%;
+    grid-column: 3/4;
+}
+
+.read-more-button {
+    font-weight: 700;
+    margin-top: 5%;
+    color: #f57981;
+    background-color: transparent;
+    border: 2px solid #f57981;
+    border-radius: 5px;
+    height: 25%;
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.read-more-button:hover {
+    background-color: #f57981;
+    color: white;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+#portfolio-image-2 {
+    margin-top: 10%;
 }

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Neue Haas Display',sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #E2CFCF;
+}
+
+nav {
+    padding: 30px 50px 70px 50px;
+    display: inline-flex;
+}
+
+nav h1 {
+    padding: 30px 10px;
+    font-size: 1.5rem;
+    font-family: "Wedding Bells", sans-serif;
+}
+
+nav h1 span {
+    font-size: 1.5rem;
+    color: #f57981;
+    font-family: "Wedding Bells", sans-serif;
+}
+
+nav ul {
+    display: inline-flex;
+    padding-left: 1000px;
+    padding-top: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #f57981;
+}
+
+.select-menu-sorting {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.select-menu-sorting h2{
+    cursor: pointer;
+}
+
+.select-menu-sorting .most-recent{
+    grid-column: 2/3;
+}
+
+.content-blog-posts {
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 20fr 20fr 20fr 20fr;
+}
+
+.first-post-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.first-post-content h1 {
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}

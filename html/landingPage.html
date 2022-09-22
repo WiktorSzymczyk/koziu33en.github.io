@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="../css/cssSets/landingPage.css"/>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Wiktor's Blog</title>
 </head>
 <body>
 
@@ -11,9 +11,10 @@
     <img class="small-logo" src="../img/60d82e9b3d931e3237953fa4_Star.svg"/>
     <h1>Wiktor <span>Szymczyk</span></h1>
     <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="blogPage.html">Blog</a></li>
+        <li><a href="../html/aboutPage.html">About</a></li>
+        <li><a href="../html/contactPage.html">Contact</a></li>
+        <li><a href="../html/projects.html">Projects</a></li>
     </ul>
 </nav>
 
@@ -66,27 +67,88 @@
 
 <section class="about-me-section">
     <h1>About Me!</h1>
-    <h2>Over the last few years I've been learning coding in order</h2>
-    <h2>to land an amazing job.I am aspired to create a new era of</h2>
-    <h2>web development. Through WBS Coding Bootcamp I expect to </h2>
-    <h2>learn everything needed to land my first job and start</h2>
-    <h2>making a difference</h2>
+    <h2>Over the last few years I've been learning coding in order <br>
+    to land an amazing job.I am aspired to create a new era of <br>
+    web development. Through WBS Coding Bootcamp I expect to <br>
+    learn everything needed to land my first job and start <br>
+    making a difference.</h2>
 </section>
 
-<section class="portfolio-products-section">
-    <div class="row">
-        <div class="column">
-            <img class="portfolio-image" src="../img/mc.png">
+<!--<section class="portfolio-products-section">-->
+<!--    <div class="row">-->
+<!--        <div class="column">-->
+<!--            <img class="portfolio-image" src="../img/B0Z2uXR.png">-->
+<!--        </div>-->
+
+<!--        <div class="column">-->
+<!--            <h3>21st July 2012</h3>-->
+<!--            <h2>FSAF </h2>-->
+<!--            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+<!--                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure-->
+<!--                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="row">-->
+<!--        <div class="column">-->
+<!--            <img class="portfolio-image" src="../img/pC9QIyQ.jpeg">-->
+<!--        </div>-->
+
+<!--        <div class="column">-->
+<!--            <h3>21st July 2012</h3>-->
+<!--            <h2>FSAF </h2>-->
+<!--            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+<!--                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure-->
+<!--                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="blog-contents">
+    <h3>21st July 2012</h3>
+    <h2>WebFirst</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h1>
+    <button class="read-more-button" onclick="read_more_button_1()" id="read-more-button-1">Read Me</button>
+    <img class="portfolio-image" src="../img/pC9QIyQ.jpeg">
+
+    <h3>21st July 2012</h3>
+    <h2>Favourite Barrel</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h1>
+    <button class="read-more-button" onclick="read_more_button_2()" id="read-more-button-2">Read Me</button>
+    <img class="portfolio-image" src="../img/B0Z2uXR.png">
+</section>
+
+<footer>
+    <img class="small-logo" src="../img/60d82e9b3d931e3237953fa4_Star.svg"/>
+    <h1>Wiktor <span>Szymczyk</span></h1>
+
+    <div class="github-and-instagram-items">
+        <div class="github-link-and-text">
+            <h3>Github</h3>
+            <img src="../img/rsz_right-arrow.png" class="link-arrow">
         </div>
 
-        <div class="column">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h1>
+        <div class="instagram-link-and-text">
+            <h3>Instagram</h3>
+            <img src="../img/rsz_right-arrow.png" class="link-arrow">
         </div>
     </div>
-</section>
+    <h3 class="copyright">© Wiktor Szymczyk 2022</h3>
+</footer>
 
+<script>
+    function read_more_button_1(){
+        window.location="webFirstProject.html";
+    }
+
+    function read_more_button_2(){
+        window.location="favouriteBarrelProject.html";
+    }
+</script>
 
 </body>
 </html>

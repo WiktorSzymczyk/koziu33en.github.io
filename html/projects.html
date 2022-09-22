@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/cssSets/projects.css">
+</head>
+<body>
+
+<nav>
+    <img class="small-logo" src="../img/60d82e9b3d931e3237953fa4_Star.svg"/>
+    <h1>Wiktor <span>Szymczyk</span></h1>
+    <ul>
+        <li><a href="blogPage.html">Blog</a></li>
+        <li><a href="../html/aboutPage.html">About</a></li>
+        <li><a href="../html/contactPage.html">Contact</a></li>
+        <li><a href="../html/projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<div class="image-gallery">
+    <img src='../img/favouriteBarrel267x267card.png' alt='' id="image-gallery-1" onclick="FullView(this.src)">
+    <img src='../img/webfirstGalleryImage267x267.png'  alt='' id="image-gallery-2" onclick="FullView(this.src)">
+    <img src='../img/desktopCleanerImageGrid267x267.png'  alt='' id="image-gallery-3" onclick="FullView(this.src)">
+    <img src='https://images.unsplash.com/photo-1662441896128-691f7ac658ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQwNDU&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+    <img src='https://images.unsplash.com/photo-1661880374687-4ce390284f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQwNDU&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+    <img src='https://images.unsplash.com/photo-1661691111071-42c262ca061e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQwNDU&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+    <img src='https://images.unsplash.com/photo-1662117488030-b3f17accfa3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQxMTQ&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+    <img src='https://images.unsplash.com/photo-1661435805196-81136edfa297?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQxMTQ&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+    <img src='https://images.unsplash.com/photo-1660584658489-a15f806f463c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5OTQxMTQ&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+</div>
+<div id="FullImageView">
+    <h1>This project was awesome!</h1>
+    <img id="FullImage">
+    <span id="CloseButton" onclick="CloseFullView()">X</span>
+    <h1><a href="favouriteBarrelProject.html">Learn More</a></h1>
+</div>
+
+<script>
+    function FullView(ImgLink){
+        document.getElementById("FullImage").src = ImgLink
+        document.getElementById("FullImageView").style.display = "block";
+    }
+
+    function CloseFullView() {
+        document.getElementById("FullImageView").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
