@@ -33,6 +33,7 @@ nav h1 span {
 nav ul {
     display: inline-flex;
     padding-top: 30px;
+    padding-left: 20%;
 }
 
 nav ul li {
